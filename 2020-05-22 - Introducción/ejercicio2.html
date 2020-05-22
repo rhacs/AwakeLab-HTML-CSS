@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- 
+
+    Segundo E. Medina González <bit1815@hotmail.com>
+    Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>
+    Mayo 22, 2020. Santiago, Chile
+
+    --------------------------------------------------------------------------------------------
+
+    1. ¿Qué secciones identifica dentro del código?
+        - Raíz del documento (html)
+        - Cabecera que contiene información del documento (head)
+        - Metadatos del documento (meta)
+        - Cuerpo del documento (body)
+    
+    2. ¿Qué tipo de errores? Cada persona del equipo debe indicar al menos dos ideas y una posible
+    solución
+        Ricardo:
+            * El la url del enlace (href) a la hoja de estilos se encuentra ausente.
+                - Eliminar el enlace
+                - Agregar una url válida para el documento
+            * Charset duplicado en la etiqueta meta
+                - Eliminar parámetro duplicado
+            * Falta cerrar la etiqueta "p" en <p id="a">Esta página tiene errores
+                - Agregar </p> al final de la línea
+
+        Segundo:
+            * <title> no es encuentra en el encabezado
+                - Agregar <title> al encabezado de la pagina
+            * Por convención, los nombres de las etiquetas y sus parámetros deben estar en minúsculas
+                - Convertir el texto a minúsculas
+            * El tipo de documento (DOCTYPE) es incorrecto
+                - Cambiar a <!DOCTYPE html>
+
+    3 ¿Es posible dar solución a todos los errores detectados? De existir alguno sin solución,
+    consultelo con su Awaker.
+        Todos los errores tienen solución, al menos los presentes en el documento
+
+-->
+<html LANG="es">
+<!DOCTYPE html+css>
+
+<head>
+    <meta charset="utf-8" charset="utf-8">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <P id="a">Esta página tiene errores
+    <p id='a'> 5 > 4</p>
+    <p><img src="imagen.png"></p>
+</body>
+
+</html>
