@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        div {
+            margin: 10px 0 10px 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input,
+        select,
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="./procesar.html" method="GET">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" autocomplete="family-name" required>
+        </div>
+        <div>
+            <label for="run">Run</label>
+            <input type="text" name="run" id="run" required>
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" required>
+        </div>
+        <div>
+            <label for="estadoCivil">Estado Civil</label>
+            <select name="estadoCivil" id="estadoCivil">
+                <option value="Casado">Casado</option>
+                <option value="Soltero">Soltero</option>
+                <option value="Viudo">Viudo</option>
+            </select>
+        </div>
+        <div>
+            <label for="genero">Género</label>
+            <select name="genero" id="genero">
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="N.A.">No Aplica</option>
+            </select>
+        </div>
+        <div>
+            <label for="locomocion">Método de Locomoción</label>
+            <select name="locomocion" id="locomocion">
+                <option value="Automovil">Automóvil</option>
+                <option value="Microbus">Microbus</option>
+                <option value="Motocicleta">Motocicleta</option>
+                <option value="Taxi">Taxi</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Enviar datos</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

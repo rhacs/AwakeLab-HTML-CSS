@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario - Procesar</title>
+
+    <style>
+        div {
+            margin: 10px 0 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="./ejercicio7.html">&laquo; Volver</a>
+
+    <div>
+        <h1>Datos Personales</h1>
+
+        <p><strong>Nombre Completo: </strong><span id="nombre"></span></p>
+        <p><strong>RUN: </strong><span id="run"></span></p>
+        <p><strong>Edad: </strong><span id="edad"></span></p>
+        <p><strong>Estado Civil: </strong><span id="estadoCivil"></span></p>
+        <p><strong>Género: </strong><span id="genero"></span></p>
+        <p><strong>Método de Locomoción: </strong><span id="locomocion"></span></p>
+    </div>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        document.getElementById('nombre').innerHTML = urlParams.get('nombre') + ' ' + urlParams.get('apellido');
+        document.getElementById('run').innerHTML = urlParams.get('run');
+        document.getElementById('edad').innerHTML = urlParams.get('edad');
+        document.getElementById('estadoCivil').innerHTML = urlParams.get('estadoCivil');
+        document.getElementById('genero').innerHTML = urlParams.get('genero');
+        document.getElementById('locomocion').innerHTML = urlParams.get('locomocion');
+    </script>
+
+</body>
+
+</html>

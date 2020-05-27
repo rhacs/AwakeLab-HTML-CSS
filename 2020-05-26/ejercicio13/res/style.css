@@ -1,0 +1,236 @@
+/* Global */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Contenedor */
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+/* Brand */
+.brand {
+    color: #fff;
+    font-size: larger;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Menú */
+.menu {
+    display: inline;
+}
+
+.menu > li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu > li > a {
+    color: #999;
+    text-decoration: none;
+}
+
+.menu > li > a.active {
+    color: #fff;
+}
+
+.menu > li > a:hover {
+    color: #666;
+}
+
+/* Contenido Principal */
+main {
+    flex: 1 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.noticia {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.noticia img {
+    float: left;
+    margin-right: 10px;
+}
+
+.contenedor h1,
+.noticia h1 {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.noticia span {
+    font-size: small;
+    color: #999;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.noticia a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.noticia .cover {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    float: none;
+}
+
+.noticia p {
+    margin: 10px;
+}
+
+form > div {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form > div > label {
+    display: block;
+}
+
+form > div > input,
+form > div > textarea,
+form > div > select {
+    width: 100%;
+    border: 1px solid teal;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form > div > button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid seagreen;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor > h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    transform: rotate(5deg) translateZ(0);
+    transform-origin: top;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.contenedor > h3 {
+    color: #ffffff;
+    background: #333333;
+    text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+    color: #ffffff;
+    background: #333333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contenedor > h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background: #005dff;
+    text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+    color: #ffffff;
+    background: #005dff;
+}
+
+.contenedor > h5 {
+    color: #ffffff;
+    background: #333333;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
+        #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+    color: #ffffff;
+    background: #333333;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.contenedor > p {
+    padding: 20px;
+}
+
+.contenedor > img {
+    max-width: 100%;
+    max-height: 100%;
+    animation: animacion 4s infinite;
+    margin-top: 30px;
+}
+
+@keyframes animacion {
+    0% {
+        background-color: #774F38;
+    }
+    25% {
+        background-color: #E08E79;
+    }
+    50% {
+        background-color: #F1D4AF;
+    }
+    100% {
+        background-color: #C5E0DC;
+    }
+}
+
+/* Pie de Página */
+footer {
+    margin-top: -90px;
+    height: 50px;
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+}

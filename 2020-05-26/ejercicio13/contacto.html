@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Desinformador</title>
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="./res/style.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="box">
+            <a class="brand" href="./index.html">El Desinformador</a>
+
+            <!-- Enlaces -->
+            <ul class="menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./contacto.html" class="active">Contacto</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main>
+        <div class="contenedor">
+            <h1>Formulario de Contacto</h1>
+            <form>
+                <div>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" autofocus required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" autocomplete="tel" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="region">Región</label>
+                    <select name="region" id="region">
+                        <option value="15">Región de Arica y Parinacota</option>
+                        <option value="01">Región de Tarapacá</option>
+                        <option value="02">Región de Antofagasta</option>
+                        <option value="03">Región de Atacama</option>
+                        <option value="04">Región de Coquimbo</option>
+                        <option value="05">Región de Valparaíso</option>
+                        <option value="13">Región Metropolitana de Santiago</option>
+                        <option value="06">Región del Libertador Bernardo O'Higgins</option>
+                        <option value="07">Región del Maule</option>
+                        <option value="16">Región del Ñuble</option>
+                        <option value="08">Región del Bío Bío</option>
+                        <option value="09">Región de la Araucanía</option>
+                        <option value="14">Región de Los Ríos</option>
+                        <option value="10">Región de Los Lagos</option>
+                        <option value="11">Región de Aysén</option>
+                        <option value="12">Región de Magallanes y de la Antártica Chilena</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="genero">Género</label>
+                    <select name="genero" id="genero">
+                        <option value="fem">Femenino</option>
+                        <option value="mas">Masculino</option>
+                        <option value="otr">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Su Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+                </div>
+
+                <div>
+                    <button type="reset">Limpiar Formulario</button>
+                    <button type="submit">Enviar Formulario</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        &copy; Copyright 2020. Todos los derechos reservados, incluyendo ese...
+    </footer>
+
+</body>
+
+</html>
